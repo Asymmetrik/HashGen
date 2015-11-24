@@ -16,7 +16,7 @@ import static org.bytedeco.javacpp.opencv_imgproc.resize;
 
 /**
  * Generates a 64-bit fuzzy image hash by first computing an image's average pixel value, and then setting a bit
- * for each pixel according to whether that pixel >= average.
+ * for each pixel according to whether that pixel is greater than or equal to the average.
  */
 public class AverageHash implements IHashGen {
 

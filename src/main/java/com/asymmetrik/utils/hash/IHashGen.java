@@ -12,7 +12,7 @@ public interface IHashGen {
      * Generate hash of given image
      * @param is stream containing image data
      * @return the generated hash or null if the image could not be read
-     * @throws IOException
+     * @throws IOException on error
      */
     String getHash(InputStream is) throws IOException;
 
