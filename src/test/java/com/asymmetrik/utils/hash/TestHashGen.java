@@ -10,16 +10,16 @@ import java.io.IOException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public abstract class TestIHashGen {
+public abstract class TestHashGen {
 
-    private static final File TEST_IMAGE_GOOD = new File(TestIHashGen.class.getClassLoader()
+    private static final File TEST_IMAGE_GOOD = new File(TestHashGen.class.getClassLoader()
             .getResource("apple.jpg").getFile());
-    private static final File TEST_IMAGE_BAD = new File(TestIHashGen.class.getClassLoader()
+    private static final File TEST_IMAGE_BAD = new File(TestHashGen.class.getClassLoader()
             .getResource("not_an_image.txt").getFile());
 
-    private IHashGen hashGen;
+    private HashGen hashGen;
 
-    protected abstract IHashGen createInstance();
+    protected abstract HashGen createInstance();
 
     @Before
     public void setUp() {

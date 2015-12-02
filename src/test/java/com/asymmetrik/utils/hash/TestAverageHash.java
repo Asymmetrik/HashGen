@@ -1,9 +1,9 @@
 package com.asymmetrik.utils.hash;
 
-public class TestAverageHash extends TestIHashGen {
+public class TestAverageHash extends TestHashGen {
 
     @Override
-    protected IHashGen createInstance() {
+    protected HashGen createInstance() {
         return new AverageHash();
     }
 }
